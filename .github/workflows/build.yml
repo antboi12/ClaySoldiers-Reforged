@@ -46,7 +46,7 @@ jobs:
 
       - name: Upload Fabric jar
         if: runner.os == 'Linux'
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: clay-soldiers-reforged-fabric-java21
           path: |
@@ -57,7 +57,7 @@ jobs:
 
       - name: Upload NeoForge jar
         if: runner.os == 'Linux'
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: clay-soldiers-reforged-neoforge-java21
           path: |
