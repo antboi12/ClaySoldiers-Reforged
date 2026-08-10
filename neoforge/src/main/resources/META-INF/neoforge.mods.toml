@@ -1,0 +1,42 @@
+modLoader="javafml" #mandatory
+loaderVersion="[2,)" #mandatory
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "clay"
+version = "${version}"
+displayName = "Clay Soldiers"
+authors = "Slainlite"
+description = '''
+This adds clay soldiers that attack for you!
+'''
+logoFile = "icon.png"
+
+[[mixins]]
+config = "clay.mixins.json"
+
+[[dependencies.clay]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,1.22)"
+
+[[dependencies.clay]]
+modId="neoforge"
+type="required"
+versionRange="[21.0,)"
+
+
+[[dependencies.clay]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.clay]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.2,)"
+ordering = "NONE"
+side = "BOTH"
