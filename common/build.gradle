@@ -24,6 +24,12 @@ dependencies {
     modImplementation "software.bernie.geckolib:geckolib-fabric-${rootProject.gecko_lib}"
 }
 
+tasks.withType(Jar).configureEach {
+    from(rootProject.file("LICENSE")) {
+        into("META-INF")
+    }
+}
+
 publishing {
     publications {
         mavenCommon(MavenPublication) {
